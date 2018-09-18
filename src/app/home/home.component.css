@@ -1,0 +1,48 @@
+.page {
+  padding-top: 20;
+  padding-bottom: 20;
+}
+.grid-layout {
+  horizontal-align: center;
+}
+
+.light-label {
+  margin: 10;
+  padding: 20;
+  border-radius: 15;
+  border-width: 3;
+  font-size: 20;
+}
+
+.light-label.L002 {
+  background-color: #f25272;
+}
+
+.light-label.L035 {
+  background-color: #f9a864;
+}
+
+.light-label.L003 {
+  background-color: #feca77;
+}
+
+.light-label.L0058 {
+  background-color: #c572fb;
+}
+
+.light-label.L004 {
+  background-color: #e9852a;
+}
+
+.light-label.L027 {
+  background-color: #f34225;
+}
+
+.fan-label {
+  margin-top: 5;
+  padding-top: 20;
+  padding-left: 40;
+  color: white;
+  border-top-width: 2;
+  font-size: 20;
+}

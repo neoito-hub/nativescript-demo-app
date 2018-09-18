@@ -1,7 +1,19 @@
-<ActionBar class="action-bar">
-    <Label class="action-bar-title" text="Home"></Label>
-</ActionBar>
-
-<GridLayout class="page">
-    <!-- Add your page content here -->
-</GridLayout>
+<scroll-view>
+	<stack-layout class="page">
+		<grid-layout rows="auto,auto,auto" columns="auto,auto" class="grid-layout">
+			<label row="0" col="0" text="L002 &#xA; Gel Name" textWrap="true" class="light-label text-center L002"></label>
+			<label row="0" col="1" text="L035 &#xA; Gel Name" textWrap="true" class="light-label text-center L035"></label>
+			<label row="1" col="0" text="L003 &#xA; Gel Name" textWrap="true" class="light-label text-center L003"></label>
+			<label row="1" col="1" text="L058 &#xA; Gel Name" textWrap="true" class="light-label text-center L0058"></label>
+			<label row="2" col="0" text="L004 &#xA; Gel Name" textWrap="true" class="light-label text-center L004"></label>
+			<label row="2" col="1" text="L027 &#xA; Gel Name" textWrap="true" class="light-label text-center L027"></label>
+		</grid-layout>
+		<toggle-group [inputTextOptions]="colorOptions" (emitUpdatedValue)="updateColor($event)"></toggle-group>
+		<app-slider sliderLabel="Color Temp" [sliderRange]="colorTempRange" unit="k" (updateSliderValue)="updateColorTempValue($event)"></app-slider>
+		<app-slider sliderLabel="Red" (updateSliderValue)="updateRedValue($event)"></app-slider>
+		<app-slider sliderLabel="Green" (updateSliderValue)="updateGreenValue($event)"></app-slider>
+		<app-slider sliderLabel="Blue" (updateSliderValue)="updateBlueValue($event)"></app-slider>
+		<label text="Fan" class="fan-label"></label>
+		<toggle-group [inputTextOptions]="fanOptions" (emitUpdatedValue)="updateFan($event)"></toggle-group>
+	</stack-layout>
+</scroll-view>

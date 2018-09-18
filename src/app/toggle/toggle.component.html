@@ -1,0 +1,4 @@
+<flexbox-layout>
+	<button *ngFor="let item of inputTextOptions" [text]="item" class="toggle-button" [class.toggle-clicked]="selectedValue === item"
+	 (tap)="toggleClick(item)"></button>
+</flexbox-layout>

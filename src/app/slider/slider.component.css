@@ -1,0 +1,37 @@
+.slider {
+  background-color: #fff;
+  color: #47caef;
+  margin: 0 10;
+}
+.slider-wrapper {
+  border-top-width: 2;
+  border-color: #000000;
+  margin: 5 0 10 0;
+  padding: 0 10;
+}
+.slider-background {
+  background-color: #a0a0a0;
+  border-radius: 50%;
+  padding: 5 20;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.slider-background label {
+  height: 20;
+  background-color: rgb(189, 189, 189);
+  width: 2;
+  color: rgb(189, 189, 189);
+}
+.slider-label {
+  color: #fff;
+  font-size: 20;
+  margin: 10;
+}
+.slider-label .reload {
+  width: 20;
+  text-align: left;
+}
+.slider-label .color-label {
+  padding-left: 10;
+}

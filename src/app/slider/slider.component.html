@@ -1,0 +1,12 @@
+<grid-layout class="slider-wrapper" height="100" rows="50 50" columns="*">
+	<grid-layout class="slider-label" rows="auto" columns="20 * auto">
+		<image col="0" class="reload" src="~/app/shared/image/reload.png" (tap)="reloadSlider()"></image>
+		<label col="1" class="color-label" [text]="sliderLabel"></label>
+		<label col="2" text="{{sliderValue | number: '0.0-0'}}{{unit}}"></label>
+	</grid-layout>
+	<flexbox-layout row="1" col="0" class="slider-background m-l-10 m-r-10">
+		<label *ngFor="let line of lines" text="|"></label>
+	</flexbox-layout>
+	<slider class="slider" row="1" col="0" [(ngModel)]="sliderValue" [minValue]="sliderRange[0]" (valueChange)="onSliderValueChange($event)"
+	 [maxValue]="sliderRange[1]"></slider>
+</grid-layout>

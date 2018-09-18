@@ -1,0 +1,20 @@
+.toggle-button {
+  background-color: #262626;
+  border-radius: 18;
+  color: #848484;
+  margin: 5;
+  border-width: 2;
+  height: 50;
+  width: 100;
+}
+
+.toggle-clicked {
+  background-color: #101010;
+  color: white;
+}
+
+FlexboxLayout {
+  padding: 5;
+  justify-content: center;
+  border-color: #000000;
+}
